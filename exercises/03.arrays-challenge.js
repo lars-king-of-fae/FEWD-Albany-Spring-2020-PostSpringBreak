@@ -84,3 +84,19 @@ let states = [
 ];
 
 
+// for (var temporaryState of states) {
+
+// }
+let statesTitleCased = []
+
+for (var i = 0; i < states.length; i++) {
+let titleCased = states[i][0].toUpperCase() + states[i].slice(1)
+  statesTitleCased.push(titleCased)
+
+  if (states[i].split(' ').length === 2) {
+    // console.log(statesTitleCased);
+    console.log(states[i][0].toUpperCase())
+  }
+
+}
+console.log(statesTitleCased);
